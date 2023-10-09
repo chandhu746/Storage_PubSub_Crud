@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File upload Page</title>
+</head>
+<body>
+     <h4>File Upload below </h4>
+
+<form method="post" enctype="multipart/form-data">
+    {{ form.hidden_tag()}}
+    {{ form.file()}}
+    {{ form.submit()}}
+
+</form>
+</body>
+</html>

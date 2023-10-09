@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Item Page</title>
+</head>
+<body>
+<h1>Update Item</h1>
+<form action="{{ url_for('update_item', item_id=item_id) }}" method="POST">
+    {{ form.csrf_token }}
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" value="{{ form.name.data }}" required pattern="[A-Za-z]+"><br>
+
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" required pattern="[A-Za-z]+">{{ form.description.data }}</textarea><br>
+
+    <input type="submit" value="Update Item">
+</form>
+</body>
+</html>

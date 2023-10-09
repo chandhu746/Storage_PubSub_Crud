@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "my-first-project"
+version = "0.1.0"
+description = "I have done Publish, subscribe using pubsub_v1 package and upload and download done with help of storage package"
+authors = ["chandhu <mchandrasekhar746@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+storage = "^0.0.4.3"
+grpc-google-cloud-pubsub-v1 = "0.14.0"
+psycopg2 = "^2.9.9"
+Flask = "^3.0.0"
+Flask-WTF-FlexWidgets = "^0.1.25"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
